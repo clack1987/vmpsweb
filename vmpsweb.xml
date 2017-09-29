@@ -1,0 +1,17 @@
+<uwsgi>
+ <socket>127.0.0.1:8001 </socket>
+ <listen>200 </listen>
+ <master>true </master>
+ <pidfile>/usr/local/nginx/uwsgi.pid </pidfile>
+ <processes>2 </processes>
+ <pythonpath>/python/vmpsweb </pythonpath>
+ <pythonpath>/python </pythonpath>
+ <module>vmpsweb_wsgi</module>
+ <profiler>true </profiler>
+ <memory-report>true </memory-report>
+ <enable-threads>true </enable-threads>
+ <logdate>true </logdate>
+ <limit-as>6048 </limit-as>
+ <daemonize>/dev/null</daemonize>
+</uwsgi>
+
